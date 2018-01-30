@@ -33,9 +33,57 @@ main {
   }
 }
 
+article {
+  max-width: 750px;
+  margin: auto;
+}
+
+.hide-content {
+  position: relative;
+  h3 {
+    z-index: 3;
+    display: block;
+    .fa {
+      margin-right: .3rem;
+      transition: all .4s ease-in;
+      transform: rotate(90deg);
+    }
+  }
+  input {
+    position: absolute;
+    z-index: 4;
+    display: block;
+    transform: scale(11,3);
+    left: 55px;
+    top: 5px;
+    opacity: 0;
+  }
+  input:checked ~ h3 .fa {
+    transition: all .4s ease-in;
+    transform: rotate(90deg);
+  }
+  p {
+    opacity: 0;
+    transition: all .4s ease-out;
+  }
+  input:checked ~ p {
+    transition: all .4s ease-in;
+    opacity: 1;
+  }
+  ul {
+    opacity: 0;
+    transition: all .4s ease-out;
+  }
+  input:checked ~ ul {
+    transition: all .4s ease-in;
+    opacity: 1;
+  }
+}
+
+
 @media (min-width:580px) {
   main {
-    margin-top: 8.5rem;
+    margin-top: 9rem;
   }
 }
 
