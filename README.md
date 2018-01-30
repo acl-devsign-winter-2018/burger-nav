@@ -1,29 +1,15 @@
-Lab: Burger Nav
+Objective
 ===
 
-We have discussed the [usability pros and cons of the Hamburger Menu](https://uxplanet.org/basic-patterns-for-mobile-navigation-d12a87686efe) before, but haven't actually implemented the pattern into a lesson yet.
+Make a responsive page demonstrating CSS-only animations. Follow the Webpack component and router architecture using vanilla JS. Use the Hamburger Menu as primary mobile navigation method. Implement CSS transforms, transitions, animations in a user-friendly way.
 
-Your goal is to build a multi-page application that uses the Hamburger Menu icon to navigate between sections.
+Steps Taken
+===
 
-Your body copy can be Lorem Ipsum, but concentrate on applying appropriate CSS Transitions to accentuate your interface choices and interactivity.
+Created a CSS only hamburger menu that utilized an input checkbox with opacity: 0 overlayed on the icon. With input:checked, click behavior was created with the navigation and hamburger menu. Have the nav appear in little blocks that float downward. When a page is selected from the nav, have that page elastically shake into view. When a button is clicked in the page, have a plus icon rotate and slowly show text by changing the opacity. I used CSS animations / transitions to accomplish each of these effects. 
 
-## Requirements
-* Make it responsive, using a combination of CSS Grid and Flexbox.
-* Follow the Webpack component and router architecture we've used on other labs. You can use `mkvanilla` as you set it up last lab to create this setup.
-* Use the Hamburger Menu as your primary mobile navigation method.
-* Implement CSS transforms, transitions, animations in a user-friendly way.
-* Sketch your responsive layout **and** animation ideas before developing.
 
-## Submission Instructions
-Submit pull request URL in Canvas, and include a .zip of your sketches.
+Reflection / Changes
+===
 
-Include the answers to the following in your submission:
-
-* How long did you spend on this lab?
-* Describe the process you used to complete the lab.
-* What was the hardest and easiest part of the lab?
-
-## Rubric
-* Sketches used to plan out responsive layout **and** animation ideas (2 points)
-* Burger navigation present, functions as navigation between app sections (4 points)
-* Thoughtful CSS transforms, transitions, animations applied (4 points)
+I initially wanted to try a drawer nav bar, but the component architecture would've made it very hard to complete within the time constraints. I instead created a nav that appears to have its items appear and fall into place. In the future, I would like to try to create a hide/show CSS-only button within the page content that would have the content adjust when the button is clicked.

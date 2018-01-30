@@ -1,0 +1,24 @@
+
+$darkest-gray: #090C0B;
+$light-gray: #FCFFFD;
+$gray: #424F4A;
+$hover: #5C756C;
+$light-mint: #EAFFF8;
+
+$header-font: something;
+$content-padding: .5rem 1rem;
+
+
+/* RESPONSIVE TYPOGRAPHY VALUES, SPECIFY WITHOUT PX
+   https://www.smashingmagazine.com/2016/05/fluid-typography/ */
+$minFontVal: 18;
+$maxFontVal: 20;
+$minViewportVal: 480;
+$maxViewportVal: 1400;
+
+$minFontSize: $(minFontVal)px;
+$maxFontSize: $(maxFontVal)px;
+$minViewportSize: $(minViewportVal)px;
+$maxViewportSize: $(maxViewportVal)px;
+
+$fluidFontSize: calc($minFontSize + ($maxFontVal - $minFontVal) * (100vw - $minViewportSize) / ($maxViewportVal - $minViewportVal));

@@ -1,0 +1,37 @@
+@import '../variables.css';
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-rows: auto 1fr auto;
+  hyphens: auto;
+}
+
+#header    {grid-area: header;}
+#main    {grid-area: main;}
+#footer  {grid-area: footer;}
+
+body {
+  color: $darkest-gray;
+}
+
+footer {
+  color: $darkest-gray;
+  text-align: center;
+  background-color: $light-mint;
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      margin: .3rem .5rem;
+      a {
+        color: $darkest-gray;
+      }
+    }
+  }
+}

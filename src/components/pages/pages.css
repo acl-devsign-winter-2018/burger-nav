@@ -1,0 +1,102 @@
+@import '../variables.css';
+
+@keyframes dropMain {
+  0% {
+    opacity: .6;
+    transform: translate(-100%, 0);
+  }
+  70% {
+    opacity: .6;
+    transform: translate(5%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+main {
+  article{animation: dropMain .35s ease-out;}
+  width: 80%;
+  margin: auto;
+  margin-top: 6.5rem;
+  p {text-align: justify;}
+  ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    li {
+      margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: none;
+      }
+    }
+  }
+}
+
+article {
+  max-width: 750px;
+  margin: auto;
+}
+
+.hide-content {
+  position: relative;
+  h3 {
+    z-index: 3;
+    display: block;
+    .fa {
+      margin-right: .3rem;
+      transition: all .4s ease-in;
+    }
+  }
+  input {
+    position: absolute;
+    z-index: 4;
+    display: block;
+    transform: scale(11,3);
+    left: 55px;
+    top: 5px;
+    opacity: 0;
+  }
+  input:checked ~ h3 .fa {
+    transition: all .4s ease-in;
+    transform: rotate(180deg);
+  }
+  p {
+    opacity: 0;
+    transition: all .4s ease-out;
+  }
+  input:checked ~ p {
+    transition: all .4s ease-in;
+    opacity: 1;
+  }
+  ul {
+    opacity: 0;
+    transition: all .4s ease-out;
+  }
+  input:checked ~ ul {
+    transition: all .4s ease-in;
+    opacity: 1;
+  }
+}
+
+
+@media (min-width:580px) {
+  main {
+    margin-top: 9rem;
+    article{animation: dropMain .6s ease-out;}
+  }
+  @keyframes dropMain {
+    0% {
+      opacity: 0;
+      transform: translate(-20%, 0);
+    }
+    30% {
+      opacity: .6;
+      transform: translate(2%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
