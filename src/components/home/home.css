@@ -1,40 +1,71 @@
 @import '../variables.css';
 
 .content-grid {
-  padding: $padding;
+  padding: 5rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  a {
+    border-bottom: 0px;
+    &:hover {
+      border-bottom: 0px;
+      /* font-size: 2rem; */
+    }
+  }
 }
 
-/* .content-grid > div:nth-child(1) {order: 1;}
-.content-grid > div:nth-child(2) {order: 2;}
-.content-grid > div:nth-child(3) {order: 3;}
-.content-grid > div:nth-child(4) {order: 4;}
-.content-grid > div:nth-child(5) {order: 5;}
-.content-grid > div:nth-child(6) {order: 6;}
-.content-grid > * {padding: 1rem;} */
+.bun {
+  color: $bun;
+  &:hover {
+    color: $bun;
+  }
+}
+.lettuce {
+  color: $lettuce;
+  &:hover {
+    color: $lettuce;
+  }
+}
+.tomato {
+  color: $tomato;
+  &:hover {
+    color: $tomato;
+  }
+}
+.cheese {
+  color: $cheese;
+  &:hover {
+    color: $cheese;
+  }
+}
+.beef {
+  color: $beef;
+  &:hover {
+    color: $beef;
+  }
+}
+.onions {
+  color: $onions;
+  &:hover {
+    color: $onions;
+  }
+}
 
 
 /* ------ Media Queries ------- */
 
 @media screen and (min-width: 1000px) {
-  /* .content-grid > div:nth-child(1) {grid-area: a;}
-  .content-grid > div:nth-child(2) {grid-area: b;}
-  .content-grid > div:nth-child(3) {grid-area: c;}
-  .content-grid > div:nth-child(4) {grid-area: d;}
-  .content-grid > div:nth-child(5) {grid-area: e;}
-  .content-grid > div:nth-child(6) {grid-area: f;} */
-  
   .content-grid {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "a a b"
-    "d c c"
-    "e e f";
-    align-items: center;
-    grid-gap: 2rem; */
+    padding: 5rem 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    a {
+      border-bottom: 0px;
+      &:hover {
+        border-bottom: 0px;
+        font-size: 4.5rem;
+      }
+    }
   }
 }
