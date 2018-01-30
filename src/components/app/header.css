@@ -1,14 +1,29 @@
 @import '../variables.css';
 
+@keyframes dropNav {
+  0% {
+    opacity: .6;
+    transform: translate(0, -100%);
+  }
+  70% {
+      opacity: .6;
+      transform: translate(0, 20%);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0, 0);
+  }
+}
+
 header {
   position: relative;
   #logo {
     background: $light-gray;
-    border-bottom: 1px solid $darkest-gray;
     padding: $content-padding;
     position: absolute;
     width: 100%;
     z-index: 2;
+    border-bottom: 1px solid $darkest-gray;
   }
   h1 {
     font-size: 1.5rem;
@@ -43,7 +58,6 @@ header {
     &:nth-child(3) {transform: rotate(-45deg) translate(-20px, 20px);}
   }
   nav {
-    background: $gray;
     position: absolute;
     width: 100%;
     left: 0;
@@ -53,25 +67,42 @@ header {
     transform-origin: 0 0;
     opacity: 0;
     ul {
-        li {
-            a {
-                color: $light-gray;
-                text-decoration: none;
-                text-transform: uppercase;
-                display: block;
-                text-align: center;
-                padding: 1rem 0;
-                border-bottom: 1px solid $mediumGrey;
-            }
-            &:hover {background: $buttonHover;}
+      li {
+        a {
+          background: $gray;
+          color: $light-gray;
+          text-decoration: none;
+          text-transform: uppercase;
+          display: block;
+          text-align: center;
+          padding: 1rem 0;
+          border-bottom: 1px solid $darkest-gray;
         }
+        &:hover {background: $buttonHover;}
+      }
     }
-}
-input:checked ~ nav {
+  }
+  input:checked ~ nav {
     opacity: 1;
     transform: none;
-    transition: all .2s ease-out;
-}
+    li {
+      &:nth-child(1) a {
+        animation: dropNav .2s ease-out;
+      }
+      &:nth-child(2) a {
+        animation: dropNav .3s ease-out;
+      }
+      &:nth-child(3) a {
+        animation: dropNav .4s ease-out;
+      }
+      &:nth-child(4) a {
+        animation: dropNav .5s ease-out;
+      }
+    }
+    /* li a{
+      
+    } */
+  }
 }
 
 /* @media (min-width: 720px) {
