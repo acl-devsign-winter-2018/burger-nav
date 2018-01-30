@@ -46,7 +46,6 @@ article {
     .fa {
       margin-right: .3rem;
       transition: all .4s ease-in;
-      transform: rotate(90deg);
     }
   }
   input {
@@ -60,7 +59,7 @@ article {
   }
   input:checked ~ h3 .fa {
     transition: all .4s ease-in;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
   p {
     opacity: 0;
