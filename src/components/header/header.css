@@ -103,15 +103,17 @@ input:checked ~ nav {
     justify-content: center;
     margin: 0;
     li {
-      padding: 0 0.7rem;
       a {
+        padding: 0 0.7rem;
         color: $black;
         border-bottom: 3px solid $white;
         transition: 0.3s ease all;
         display: block;
+        background-color: none;
       }
       a:hover {
         border-bottom-color: $link;
+        background-color: none;
       }
     }
   }
