@@ -1,0 +1,110 @@
+@import '../variables.css';
+
+.content-grid {
+  padding: 5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  a {
+    border-bottom: 0px;
+    &:hover {
+      border-bottom: 0px;
+      /* font-size: 2rem; */
+    }
+  }
+}
+
+.bun {
+  color: $bun;
+  &:hover {
+    color: $bun;
+  }
+}
+.lettuce {
+  color: $lettuce;
+  &:hover {
+    color: $lettuce;
+  }
+}
+.tomato {
+  color: $tomato;
+  &:hover {
+    color: $tomato;
+  }
+}
+.cheese {
+  color: $cheese;
+  &:hover {
+    color: $cheese;
+  }
+}
+.beef {
+  color: $beef;
+  &:hover {
+    color: $beef;
+  }
+}
+.onions {
+  color: $onions;
+  &:hover {
+    color: $onions;
+  }
+}
+
+.home {
+  .bun {
+    color: $black;
+    &:hover {
+      color: $bun;
+    }
+  }
+  .lettuce {
+    color: $black;
+    &:hover {
+      color: $lettuce;
+    }
+  }
+  .tomato {
+    color: $black;
+    &:hover {
+      color: $tomato;
+    }
+  }
+  .cheese {
+    color: $black;
+    &:hover {
+      color: $cheese;
+    }
+  }
+  .beef {
+    color: $black;
+    &:hover {
+      color: $beef;
+    }
+  }
+  .onions {
+    color: $black;
+    &:hover {
+      color: $onions;
+    }
+  }
+}
+
+
+/* ------ Media Queries ------- */
+
+@media screen and (min-width: 900px) {
+  .content-grid {
+    padding: 5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    a {
+      border-bottom: 0px;
+      &:hover {
+        border-bottom: 0px;
+        font-size: 4.5rem;
+      }
+    }
+  }
+}

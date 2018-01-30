@@ -1,0 +1,9 @@
+@import '../variables.css';
+
+.resource-grid {
+  padding: $padding;
+}
+
+@media screen and (min-width: 1000px) {
+
+}

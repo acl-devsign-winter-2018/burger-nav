@@ -1,0 +1,24 @@
+$accent: #ff8c8c;
+$link: #4d2513;
+$darklink: #007BC2;
+$lightgray: #eeeeee;
+$darkgray: #444140;
+$white: #ffffff;
+$gray: #E0E0E0;
+$black: #000000;
+
+$bun: #974f34;
+$lettuce: #759b04;
+$tomato: #E53935;
+$cheese: #ad9300;
+$beef: #50332a;
+$onions: #778085;
+
+
+
+$maxViewportSize: 1280px;
+$padding: 2rem;
+
+aside {
+  color: #778085;
+}
