@@ -9,13 +9,16 @@ export default class Header{
   render(){
     const dom = template.clone();
 
-    // const checkbox = dom.querySelector('input');
-    // this.menu = dom.querySelector('ul');
+///////////////resets burger menu
+    const checkbox = dom.querySelector('input');
+    this.menu = dom.querySelector('ul');
     
-    // this.menu.addEventListener('click', event => {   
-    //   event.preventDefault();  
-    //   checkbox.checked = false;
-    // });
+    this.menu.addEventListener('click', event => {   
+      checkbox.click(
+        checkbox.addEventListener('change', event => {
+          event.preventDefault(); 
+        }));
+    });
 
     return dom;
   }

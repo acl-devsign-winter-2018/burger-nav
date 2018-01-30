@@ -4,9 +4,9 @@
 
 header{
   height: 7rem;
-  position: relative;
-  /* top: -2rem; */
-  background: $lighter;
+  position: sticky;
+  top: -2rem;
+  /* background: $lighter; */
 }
 
 #menu {visibility: hidden;}
@@ -16,7 +16,7 @@ label, label:before, label:after {
   width: 40px;
   height: 8px;
   border-radius: 2px;
-  background: $light;
+  background: $lighter;
   z-index: 10;
 }
 
@@ -69,10 +69,10 @@ nav {
   position: absolute;
   /* z-index: 1; */
   width: 100%;
-  top: 5rem;
+  top: 2rem;
   transform: translate(0, -20rem);
   transform-origin: (0, 0);
-  opacity: 0;
+  opacity: 1;
 }
 
 a {
