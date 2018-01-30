@@ -17,6 +17,6 @@
 
 main {
   article {
-    animation: pageSlide 0.8s ease-out;
+    animation: pageSlide 0.6s ease-out;
   }
 }
