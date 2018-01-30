@@ -1,7 +1,8 @@
+
 Lab: Burger Nav
 ===
 
-We have discussed the [usability pros and cons of the Hamburger Menu](https://uxplanet.org/basic-patterns-for-mobile-navigation-d12a87686efe) before, but haven't actually implemented the pattern into a lesson yet.
+We have discussed the [usability pros and cons! of the Hamburger Menu](https://uxplanet.org/basic-patterns-for-mobile-navigation-d12a87686efe) before, but haven't actually implemented the pattern into a lesson yet.
 
 Your goal is to build a multi-page application that uses the Hamburger Menu icon to navigate between sections.
 
@@ -13,6 +14,7 @@ Your body copy can be Lorem Ipsum, but concentrate on applying appropriate CSS T
 * Use the Hamburger Menu as your primary mobile navigation method.
 * Implement CSS transforms, transitions, animations in a user-friendly way.
 * Sketch your responsive layout **and** animation ideas before developing.
+
 
 ## Submission Instructions
 Submit pull request URL in Canvas, and include a .zip of your sketches.

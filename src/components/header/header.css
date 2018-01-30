@@ -1,0 +1,126 @@
+@import '../variables.css';
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+header{
+  height: 7rem;
+  position: relative;
+  /* top: -2rem; */
+  background: $lighter;
+}
+
+#menu {opacity:0;}
+
+/* hamburger //////////////////////////////*/
+label, label:before, label:after {
+  width: 40px;
+  height: 8px;
+  border-radius: 2px;
+  background: $light;
+}
+
+label {
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: fixed;
+  top: 2.5rem;
+  right: 1.5rem;
+  /* margin-left: -50px;
+  margin-top: -7.5px; */
+}
+
+label:before, label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+label:before {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+}
+
+label:after {  
+  transform: translateY(15px);
+  -webkit-transform: translateY(15px);
+}
+
+/* animation when checked */
+#menu:checked + label {
+  width:0px;
+  
+}
+
+#menu:checked + label:before {
+  transform: rotate(45deg) translate(-25px, 25px);
+  -webkit-transform: rotate(45deg) translate(-25px, 25px);
+}
+#menu:checked + label:after {
+  transform: rotate(-45deg) translate(-25px, -25px);
+  -webkit-transform: rotate(-45deg) translate(-25px, -25px);
+}
+/* end hamburger ///////////////////////////*/
+
+nav {
+  background: $lighter;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 5rem;
+  transform: translate(0, -20rem);
+  transform-origin: (0, 0);
+  opacity: 0;
+}
+
+a {
+  font: 500 2rem 'Oswald', sans-serif;
+  color: $light;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid $light;
+}
+
+/* a:hover {
+  background: $lighter; 
+  color: $light
+} */
+
+
+#menu:checked ~ nav {
+  opacity: 1;
+  transform: none;
+  transition:.2s ease-out;
+}
+
+@media (min-width: 720px) {
+  
+  header{
+    height: 5rem;
+    position: sticky;
+    top: -5rem;
+  }
+  label, #menu{
+    display: none;
+  }
+  
+  nav {
+    transform: none;
+    opacity: 1;
+  }
+
+  ul {
+    display: flex;
+    li {
+    flex-grow: 1;
+    a {border-right: 3px solid $light;}
+    &:last-child a {border-right: none;}
+    }
+  }
+
+  
+}
