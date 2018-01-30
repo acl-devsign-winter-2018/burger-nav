@@ -83,12 +83,7 @@ article {
 @media (min-width:580px) {
   main {
     margin-top: 9rem;
-  }
-}
-
-@media (min-width: 720px) {
-  main {
-    article{animation: dropMain .35s ease-out;}
+    article{animation: dropMain .6s ease-out;}
   }
   @keyframes dropMain {
     0% {
