@@ -1,7 +1,8 @@
-$dark-font: #EEE5E9;
-$dark-background: #080705;
-$dark-headfoot: #C4560D;
-$dark-box: #19180A;
+
+$darkest-gray: #090C0B;
+$light-gray: #F4FFFB;
+$gray: #424F4A;
+$light-mint: #EAFFF8;
 
 $header-font: something;
 $content-padding: .5rem 1rem;
