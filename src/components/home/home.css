@@ -51,10 +51,49 @@
   }
 }
 
+.home {
+  .bun {
+    color: $black;
+    &:hover {
+      color: $bun;
+    }
+  }
+  .lettuce {
+    color: $black;
+    &:hover {
+      color: $lettuce;
+    }
+  }
+  .tomato {
+    color: $black;
+    &:hover {
+      color: $tomato;
+    }
+  }
+  .cheese {
+    color: $black;
+    &:hover {
+      color: $cheese;
+    }
+  }
+  .beef {
+    color: $black;
+    &:hover {
+      color: $beef;
+    }
+  }
+  .onions {
+    color: $black;
+    &:hover {
+      color: $onions;
+    }
+  }
+}
+
 
 /* ------ Media Queries ------- */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .content-grid {
     padding: 5rem 0;
     text-align: center;

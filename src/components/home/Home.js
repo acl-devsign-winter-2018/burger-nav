@@ -1,5 +1,6 @@
 import html from './home.html';
 import './home.css';
+import './slide.css';
 import Template from '../Template';
 
 const template = new Template(html);

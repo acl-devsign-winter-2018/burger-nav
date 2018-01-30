@@ -1,5 +1,6 @@
 import html from './tomato.html';
 import './tomato.css';
+import '../home/slide.css';
 import Template from '../Template';
 
 const template = new Template(html);

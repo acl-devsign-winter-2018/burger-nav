@@ -62,6 +62,7 @@ input {
   top: 30px;
   right: 45px;
   opacity: 0;
+  cursor: pointer;
 }
 
 input:checked ~ #burger span {
@@ -106,14 +107,14 @@ input:checked ~ nav {
       a {
         padding: 0 0.7rem;
         color: $black;
-        border-bottom: 3px solid $white;
+        /* border-bottom: 3px solid $white; */
         transition: 0.3s ease all;
         display: block;
-        background-color: none;
+        background-color: $white;
       }
       a:hover {
-        border-bottom-color: $link;
-        background-color: none;
+        /* border-bottom-color: 3px solid $lightgray; */
+        background-color: $white;
       }
     }
   }

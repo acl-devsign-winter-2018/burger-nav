@@ -8,11 +8,11 @@ $gray: #E0E0E0;
 $black: #000000;
 
 $bun: #974f34;
-$lettuce: #88b600;
+$lettuce: #759b04;
 $tomato: #E53935;
-$cheese: #e4ac04;
+$cheese: #ad9300;
 $beef: #50332a;
-$onions: #B0BEC5;
+$onions: #778085;
 
 
 
@@ -20,5 +20,5 @@ $maxViewportSize: 1280px;
 $padding: 2rem;
 
 aside {
-  color: #e4ac04;
+  color: #778085;
 }
