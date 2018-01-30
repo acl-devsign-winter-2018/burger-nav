@@ -20,6 +20,7 @@ nav {
   top: 65px;
   width: 100%;
   background-color: white;
+  box-shadow: 0px 11px 17px 0px rgba(0,0,0,0.15);
   ul {
     margin: 2rem 0;
   li {  
@@ -84,6 +85,10 @@ input:checked ~ nav {
   transition: 0.3s ease all;
 }
 
+input:checked + #main {
+  background-color: rgba(0,0,0,0.5);
+}
+
 /*  -------- Media Queries ------- */
 
 /* Mobile */
@@ -97,6 +102,8 @@ input:checked ~ nav {
     position: unset;
     /* justify-content: flex-end; */
     top: 0;
+    box-shadow: none;
+    
   }
 
   .ulist {
