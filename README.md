@@ -12,7 +12,6 @@ Your body copy can be Lorem Ipsum, but concentrate on applying appropriate CSS T
 * Follow the Webpack component and router architecture we've used on other labs. You can use `mkvanilla` as you set it up last lab to create this setup.
 * Use the Hamburger Menu as your primary mobile navigation method.
 * Implement CSS transforms, transitions, animations in a user-friendly way.
-* [Cloudinary](https://cloudinary.com/documentation/responsive_images) should be used to serve appropriate responsive images.
 * Sketch your responsive layout **and** animation ideas before developing.
 
 ## Submission Instructions
