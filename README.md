@@ -1,7 +1,7 @@
 Lab: Burger Nav
 ===
 
-We have discussed the [usability pros and cons of the Hamburger Menu](https://uxplanet.org/basic-patterns-for-mobile-navigation-d12a87686efe) before, but haven't actually implemented the pattern into a lesson yet.
+We have discussed the [usability pros and cons! of the Hamburger Menu](https://uxplanet.org/basic-patterns-for-mobile-navigation-d12a87686efe) before, but haven't actually implemented the pattern into a lesson yet.
 
 Your goal is to build a multi-page application that uses the Hamburger Menu icon to navigate between sections.
 
