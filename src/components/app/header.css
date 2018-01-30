@@ -18,7 +18,7 @@
 header {
   position: relative;
   #logo {
-    background: $light-gray;
+    background: $light-mint;
     padding: $content-padding;
     position: absolute;
     width: 100%;
@@ -77,8 +77,9 @@ header {
           text-align: center;
           padding: 1rem 0;
           border-bottom: 1px solid $darkest-gray;
+          &:hover {background: $hover;}
+          font-size: $fluidFontSize;
         }
-        &:hover {background: $buttonHover;}
       }
     }
   }
@@ -105,7 +106,7 @@ header {
   }
 }
 
-/* @media (min-width: 720px) {
+@media (min-width: 580px) {
   header {
       #logo {margin: 0 auto;}
       #navBtn, input {display: none;}
@@ -117,9 +118,9 @@ header {
           display: flex;
           li {
               flex-grow: 1;
-              a {border-right: 1px solid $mediumGrey;}
+              a {border-right: 1px solid $darkest-gray;}
               &:last-child a {border-right: none;}
           }
       }
   }
-} */
+}

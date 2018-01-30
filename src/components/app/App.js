@@ -1,6 +1,7 @@
 import Template from '../Template';
 import html from './app.html';
 import './app.css';
+import '../pages/pages.css';
 import { removeChildren } from '../dom';
 import Header from './Header';
 import Page1 from '../pages/page1/Page1';
