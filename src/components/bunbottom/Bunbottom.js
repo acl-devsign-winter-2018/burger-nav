@@ -1,10 +1,10 @@
-import html from './resources.html';
-import './resources.css';
+import html from './bunbottom.html';
+import './bunbottom.css';
 import Template from '../Template';
 
 const template = new Template(html);
 
-export default class Resources {
+export default class Bunbottom {
 
   render() {
     const dom = template.clone();
