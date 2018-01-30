@@ -1,3 +1,4 @@
+
 Lab: Burger Nav
 ===
 
@@ -13,6 +14,7 @@ Your body copy can be Lorem Ipsum, but concentrate on applying appropriate CSS T
 * Use the Hamburger Menu as your primary mobile navigation method.
 * Implement CSS transforms, transitions, animations in a user-friendly way.
 * Sketch your responsive layout **and** animation ideas before developing.
+
 
 ## Submission Instructions
 Submit pull request URL in Canvas, and include a .zip of your sketches.
