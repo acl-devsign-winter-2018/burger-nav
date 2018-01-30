@@ -9,7 +9,7 @@ header{
   background: $lighter;
 }
 
-#menu {opacity:0;}
+#menu {visibility: hidden;}
 
 /* hamburger //////////////////////////////*/
 label, label:before, label:after {
@@ -17,24 +17,25 @@ label, label:before, label:after {
   height: 8px;
   border-radius: 2px;
   background: $light;
+  z-index: 10;
 }
 
 label {
   cursor: pointer;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  /* -webkit-transition: 0.5s; */
+  transition: 0.5s;
   position: fixed;
   top: 2.5rem;
   right: 1.5rem;
-  /* margin-left: -50px;
-  margin-top: -7.5px; */
+  margin-left: -50px;
+  margin-top: -7.5px;
 }
 
 label:before, label:after {
   content: "";
   position: absolute;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  /* -webkit-transition: 0.6s; */
+  transition: 0.5s;
 }
 
 label:before {
@@ -55,18 +56,18 @@ label:after {
 
 #menu:checked + label:before {
   transform: rotate(45deg) translate(-25px, 25px);
-  -webkit-transform: rotate(45deg) translate(-25px, 25px);
+  /* -webkit-transform: rotate(45deg) translate(-25px, 25px); */
 }
 #menu:checked + label:after {
   transform: rotate(-45deg) translate(-25px, -25px);
-  -webkit-transform: rotate(-45deg) translate(-25px, -25px);
+  /* -webkit-transform: rotate(-45deg) translate(-25px, -25px); */
 }
 /* end hamburger ///////////////////////////*/
 
 nav {
   background: $lighter;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
   top: 5rem;
   transform: translate(0, -20rem);
@@ -85,12 +86,6 @@ a {
   border-bottom: 1px solid $light;
 }
 
-/* a:hover {
-  background: $lighter; 
-  color: $light
-} */
-
-
 #menu:checked ~ nav {
   opacity: 1;
   transform: none;
@@ -104,6 +99,7 @@ a {
     position: sticky;
     top: -5rem;
   }
+
   label, #menu{
     display: none;
   }
@@ -120,6 +116,11 @@ a {
     a {border-right: 3px solid $light;}
     &:last-child a {border-right: none;}
     }
+  }
+
+  a:hover {
+  background: $lighter; 
+  color: $light
   }
 
   
