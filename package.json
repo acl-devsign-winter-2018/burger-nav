@@ -11,7 +11,7 @@
     "start": "webpack-dev-server",
     "build": "webpack"
   },
-  "author": "Anwar Montasir",
+  "author": "Jennifer Elton based on Alchemy Code Labs template",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
