@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
 header{
-  height: 7rem;
-  position: relative;
-  /* top: -2rem; */
-  background: $lighter;
+  height: 0;
+  margin: 0 auto;
+  position: sticky;
+  top: 0rem;
 }
 
-#menu {opacity:0;}
+#menu {visibility: hidden;}
 
 /* hamburger //////////////////////////////*/
 label, label:before, label:after {
@@ -17,62 +17,47 @@ label, label:before, label:after {
   height: 8px;
   border-radius: 2px;
   background: $light;
+  z-index: 10;
 }
 
 label {
   cursor: pointer;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  transition: 0.5s;
   position: fixed;
   top: 2.5rem;
   right: 1.5rem;
-  /* margin-left: -50px;
-  margin-top: -7.5px; */
+  margin-left: -50px;
+  margin-top: -7.5px;
 }
 
 label:before, label:after {
   content: "";
   position: absolute;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 
-label:before {
-  transform: translateY(-15px);
-  -webkit-transform: translateY(-15px);
-}
+label:before {transform: translateY(-15px);}
 
-label:after {  
-  transform: translateY(15px);
-  -webkit-transform: translateY(15px);
-}
+label:after {transform: translateY(15px);}
 
 /* animation when checked */
-#menu:checked + label {
-  width:0px;
-  
-}
+#menu:checked + label {width:0px;}
 
-#menu:checked + label:before {
-  transform: rotate(45deg) translate(-25px, 25px);
-  -webkit-transform: rotate(45deg) translate(-25px, 25px);
-}
-#menu:checked + label:after {
-  transform: rotate(-45deg) translate(-25px, -25px);
-  -webkit-transform: rotate(-45deg) translate(-25px, -25px);
-}
+#menu:checked + label:before {transform: rotate(45deg) translate(-25px, 25px);}
+
+#menu:checked + label:after {transform: rotate(-45deg) translate(-25px, -25px);}
 /* end hamburger ///////////////////////////*/
 
 nav {
-  background: $lighter;
   position: absolute;
-  z-index: 1;
+  background: $lighter;
   width: 100%;
-  top: 5rem;
-  transform: translate(0, -20rem);
+  transform: translate(0, -25rem);
   transform-origin: (0, 0);
-  opacity: 0;
+  opacity: 1;
 }
+
+li{height: 5rem;}
 
 a {
   font: 500 2rem 'Oswald', sans-serif;
@@ -85,28 +70,27 @@ a {
   border-bottom: 1px solid $light;
 }
 
-/* a:hover {
-  background: $lighter; 
-  color: $light
-} */
-
+#p1 {color: $rose;}
+#p2 {color: $merlot;}
+#p3 {color: $grape;}
+#p4 {color: $maritime;}
 
 #menu:checked ~ nav {
   opacity: 1;
   transform: none;
-  transition:.2s ease-out;
+  top: 0;
+  transition: .2s ease-out;
 }
 
 @media (min-width: 720px) {
   
   header{
     height: 5rem;
-    position: sticky;
-    top: -5rem;
+    position: fixed;
+    width: 100%;
   }
-  label, #menu{
-    display: none;
-  }
+
+  label, #menu{display: none;}
   
   nav {
     transform: none;
@@ -115,12 +99,9 @@ a {
 
   ul {
     display: flex;
-    li {
-    flex-grow: 1;
+    li {flex-grow: 1;
     a {border-right: 3px solid $light;}
     &:last-child a {border-right: none;}
     }
   }
-
-  
 }
