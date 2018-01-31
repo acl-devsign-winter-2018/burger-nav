@@ -1,0 +1,128 @@
+@import '../variables.css';
+
+#main-head {
+  position: relative;
+}
+
+.title {
+  color:white;
+  z-index: 5;
+  position: absolute;
+  
+  margin: auto;
+  font-size: 2em;
+}
+
+#logo {
+  background: #232323;
+  border-bottom: 1px solid ;
+  padding: $contentPadding;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  img {width: 68px;}
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #1f221f;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  }
+
+
+
+ a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color:#00b179 ;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 14px;
+  right: 9px;
+  cursor: pointer;
+  opacity: 0.25;
+  z-index: 4; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: absolute;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 3;
+  top: 20px;
+  right: 1rem;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease; 
+              &:nth-child(2) {transform: translate(0, 10px);}
+              &:nth-child(3) {transform: translate(0, 20px);}
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 0;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  background: #ededed;
+  list-style-type: none;
+  /* -webkit-font-smoothing: antialiased; */
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
